@@ -6,10 +6,13 @@ using UnityEngine.Rendering;
 
 public class Platform : MonoBehaviour
 {
+
+    [Header("References")]
    [SerializeField] GameObject _fencePrefab;
    [SerializeField] GameObject _itemPickup;
    [SerializeField] GameObject _coinPrefab;
 
+    [Header("Platform Values and Settings")]
     [SerializeField] float _itemSpawnChnce = 0.7f;
     [SerializeField] float _coinSpawnChnce = 0.5f;
     [SerializeField] float offSet = 1f;
@@ -17,12 +20,18 @@ public class Platform : MonoBehaviour
    [SerializeField] float[] lanes = {-3.5f, 0, 3.5f};
 
     List<int> lanesAvail = new List<int> {0,1,2};
+    LevelGenerator _levelGen;
 
     void Start()
     {
         SpawnFence();
         SpawnApple();
         SpawnCoins();
+    }
+
+    public void Init(LevelGenerator levelGen)
+    {
+        _levelGen = levelGen;
     }
 
 
@@ -51,7 +60,8 @@ public class Platform : MonoBehaviour
         int selectedLane = SelectLane();
 
         Vector3 spawnPos = new Vector3(lanes[selectedLane], transform.position.y, transform.position.z);
-        Instantiate(_itemPickup, spawnPos, Quaternion.identity, this.transform);
+        Apple apple = Instantiate(_itemPickup, spawnPos, Quaternion.identity, this.transform).GetComponent<Apple>();
+        apple.Init(_levelGen);
 
     }
 
@@ -75,7 +85,7 @@ public class Platform : MonoBehaviour
         
     }
 
-    private int SelectLane()
+     int SelectLane()
     {
         
 
@@ -96,5 +106,7 @@ public class Platform : MonoBehaviour
         }
             
     }
+
+   
 
 }

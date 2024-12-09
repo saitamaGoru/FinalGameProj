@@ -4,13 +4,16 @@ public class Apple : PickupItem
 {
     LevelGenerator _levelGen;
 
-    void Start()
+    public void Init(LevelGenerator levelGen) 
     {
-        _levelGen = FindFirstObjectByType<LevelGenerator>();
+        _levelGen = levelGen;
     }
+    
+    
     protected override void OnPickup()
     {
        Debug.Log("Apple Picked up!!");
-       _levelGen.UpdateSpeed(3f);
+       if(_levelGen !=null)
+        _levelGen.UpdateSpeed(3f);
     }
 }

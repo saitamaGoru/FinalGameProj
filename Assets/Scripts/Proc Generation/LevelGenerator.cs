@@ -1,12 +1,13 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
+
 using UnityEngine;
 
 [RequireComponent(typeof(Speed))]
 public class LevelGenerator : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] GameObject _platformPrefab;
+    [SerializeField] GameObject[] _platformPrefab;
+    [SerializeField] GameObject _checkpointPrefab;
     [SerializeField] Transform _platformParent;
 
     [Header("Level Settings")]
@@ -18,18 +19,19 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] float _maxMoveSpeed = 20f;
      [SerializeField]  float _minGravitySpeed = -22f;
     [SerializeField] float _maxGravitySpeed = -2f;
+    [SerializeField] int _countSet = 8;
 
    // GameObject[] _platforms = new GameObject[12]; //setting 12 size of the array 
 
     List<GameObject> _platforms = new List<GameObject>();
 
-   
+   [SerializeField]int _platformCount = 0;
 
 
     [SerializeField] CameraController _cameraCont;
     private Speed _speed;
     private float _currSpeed;
-   
+   GameObject platPref;
 
 
     void Awake()
@@ -52,13 +54,46 @@ public class LevelGenerator : MonoBehaviour
 
     void GeneratePlatforms()
     {
+        
         for (int i = 0; i < _platformPrefabAmount; i++)
         {
-            GameObject platform = Instantiate(_platformPrefab, new Vector3(transform.position.x, transform.position.y, transform.position.z + (_platformLength * i)),
-            quaternion.identity, _platformParent);
+            SpawnPlatform();
+            // if(_platformCount > 8) _platformCount = 0;
+           
+        }
+    }
 
-            _platforms.Add(platform);
+    private void SpawnPlatform()
+    {
+        ChoosePlatform();
+        float posZ = CalculateZPosition();
+        Vector3 platformSpawnPos = new Vector3(transform.position.x, transform.position.y, posZ);
+        GameObject platform = Instantiate(platPref, platformSpawnPos,Quaternion.identity, _platformParent);
+        _platforms.Add(platform);
 
+
+        Platform newPlatform = platform.GetComponent<Platform>();
+        newPlatform.Init(this);
+        _platformCount++;
+    }
+
+    float CalculateZPosition()
+    {
+        float spwPosZ; 
+        if(_platforms.Count == 0 )spwPosZ = transform.position.z;
+        else spwPosZ = _platforms[_platforms.Count - 1].transform.position.z + _platformLength;
+        return spwPosZ;
+    }
+    private void  ChoosePlatform()
+    {
+        if (_platformCount % _countSet == 0 && _platformCount != 0)
+        {
+            platPref = _checkpointPrefab;
+            // _platformCount = 0;
+        }
+        else
+        {
+            platPref = _platformPrefab[Random.Range(0, _platformPrefab.Length)];
         }
     }
 
@@ -91,12 +126,8 @@ public class LevelGenerator : MonoBehaviour
             {
                 _platforms.Remove(platform);
                 Destroy(platform);
-                GameObject platformNew = Instantiate(_platformPrefab, 
-                new Vector3(transform.position.x, transform.position.y, transform.position.z + (_platformLength *   ((_platforms.Count-1) - i))),
-                quaternion.identity,
-                 _platformParent);
+               SpawnPlatform();
                 
-                _platforms.Add(platformNew);
             }
         }
     }
