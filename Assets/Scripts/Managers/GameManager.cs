@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
      
     bool _gameIsOver = false;
 
-    public float _newTime;
-
     public bool GameOver => _gameIsOver;
     void Start()
     {   
@@ -33,16 +31,6 @@ public class GameManager : MonoBehaviour
         _score.text = _runTime.ToString("F1");
 
         if (_runTime <= 0f) GameOverScreen();
-    }
-
-    public void AddTime(float addTime)
-    {
-        _newTime = _runTime + addTime;
-
-        if (_newTime != _runTime)
-        {
-            _runTime = _newTime;
-        }
     }
 
     void GameOverScreen()

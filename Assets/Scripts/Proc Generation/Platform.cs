@@ -23,7 +23,6 @@ public class Platform : MonoBehaviour
 
     List<int> lanesAvail = new List<int> {0,1,2};
     LevelGenerator _levelGen;
-    GameManager _gameManager;
 
     void Start()
     {
@@ -78,7 +77,6 @@ public class Platform : MonoBehaviour
 
         Vector3 spawnPos = new Vector3(lanes[selectedLane], transform.position.y+1, transform.position.z);
         Watch watch = Instantiate(_watchPrefab, spawnPos, Quaternion.identity, this.transform).GetComponent<Watch>();
-        watch.Init(_gameManager);
     }
    
     void SpawnCoins()
