@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5181376173802043739, guid: 35d2c89f02e5c514a8ecfa872ee6ca56, type: 3}
+      propertyPath: _watchPrefab
+      value: 
+      objectReference: {fileID: 3721680985964969577, guid: 549255e793126a745bd50b952c0f7c93, type: 3}
     - target: {fileID: 5800473903024501461, guid: 35d2c89f02e5c514a8ecfa872ee6ca56, type: 3}
       propertyPath: m_Name
       value: PlatformBothPole

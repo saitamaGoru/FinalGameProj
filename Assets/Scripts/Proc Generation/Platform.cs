@@ -11,22 +11,26 @@ public class Platform : MonoBehaviour
    [SerializeField] GameObject _fencePrefab;
    [SerializeField] GameObject _itemPickup;
    [SerializeField] GameObject _coinPrefab;
+   [SerializeField] GameObject _watchPrefab;
 
     [Header("Platform Values and Settings")]
     [SerializeField] float _itemSpawnChnce = 0.7f;
     [SerializeField] float _coinSpawnChnce = 0.5f;
+    [SerializeField] float _watchSpawnChnce = 0.5f;
     [SerializeField] float offSet = 1f;
      [SerializeField] float coindDistanceOffset = 2f;
    [SerializeField] float[] lanes = {-3.5f, 0, 3.5f};
 
     List<int> lanesAvail = new List<int> {0,1,2};
     LevelGenerator _levelGen;
+    GameManager _gameManager;
 
     void Start()
     {
         SpawnFence();
         SpawnApple();
         SpawnCoins();
+        SpawnWatch();
     }
 
     public void Init(LevelGenerator levelGen)
@@ -65,6 +69,17 @@ public class Platform : MonoBehaviour
 
     }
 
+    void SpawnWatch()
+    {
+        if (Random.value > _watchSpawnChnce || lanesAvail.Count <= 0) return;
+        CreateOffset();
+
+        int selectedLane = SelectLane();
+
+        Vector3 spawnPos = new Vector3(lanes[selectedLane], transform.position.y+1, transform.position.z);
+        Watch watch = Instantiate(_watchPrefab, spawnPos, Quaternion.identity, this.transform).GetComponent<Watch>();
+        watch.Init(_gameManager);
+    }
    
     void SpawnCoins()
     {

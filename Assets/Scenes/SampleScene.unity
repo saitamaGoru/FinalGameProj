@@ -6283,7 +6283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50, y: 0}
+  m_AnchoredPosition: {x: 49.999878, y: 0}
   m_SizeDelta: {x: 500, y: 211}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1181863831
@@ -6418,6 +6418,7 @@ MonoBehaviour:
   _score: {fileID: 995781809}
   _gameOver: {fileID: 170217504}
   _startTime: 60
+  _newTime: 0
 --- !u!4 &1242773304
 Transform:
   m_ObjectHideFlags: 0
@@ -11775,6 +11776,18 @@ PrefabInstance:
     - target: {fileID: 5525205847713041916, guid: eb496a038bb6e6d4ab13072f350bc084, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572413304542496370, guid: eb496a038bb6e6d4ab13072f350bc084, type: 3}
+      propertyPath: _coinPrefab
+      value: 
+      objectReference: {fileID: 949318022327801142, guid: f4347cf6c6a3f3a46820c42ea373530e, type: 3}
+    - target: {fileID: 6572413304542496370, guid: eb496a038bb6e6d4ab13072f350bc084, type: 3}
+      propertyPath: _watchPrefab
+      value: 
+      objectReference: {fileID: 3721680985964969577, guid: 549255e793126a745bd50b952c0f7c93, type: 3}
+    - target: {fileID: 6572413304542496370, guid: eb496a038bb6e6d4ab13072f350bc084, type: 3}
+      propertyPath: _watchSpawnChnce
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
