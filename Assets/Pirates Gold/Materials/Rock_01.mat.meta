@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 35da8461c64ca73459763c5faa95a7fc
+timeCreated: 1516010499
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Materials/Rock_01.mat
+  uploadId: 416113

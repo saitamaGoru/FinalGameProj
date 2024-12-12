@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b9813568b0cfca64faffc0570f97d26f
+timeCreated: 1515954694
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/Coin_A5.prefab
+  uploadId: 416113

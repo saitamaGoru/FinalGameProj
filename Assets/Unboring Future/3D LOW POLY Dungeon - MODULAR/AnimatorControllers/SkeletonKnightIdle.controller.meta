@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 701a331f330f98b48b35c0e1442f1377
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282557
+  packageName: 3D LOW POLY Dungeon - MODULAR
+  packageVersion: 1.0
+  assetPath: Assets/Unboring Future/3D LOW POLY Dungeon - MODULAR/AnimatorControllers/SkeletonKnightIdle.controller
+  uploadId: 710891

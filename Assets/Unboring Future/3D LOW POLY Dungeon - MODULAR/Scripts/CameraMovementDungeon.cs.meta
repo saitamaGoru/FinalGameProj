@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e4aa710927932bd4a88a836e6dab4f93
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 282557
+  packageName: 3D LOW POLY Dungeon - MODULAR
+  packageVersion: 1.0
+  assetPath: Assets/Unboring Future/3D LOW POLY Dungeon - MODULAR/Scripts/CameraMovementDungeon.cs
+  uploadId: 710891

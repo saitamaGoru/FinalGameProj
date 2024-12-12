@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4d58830295f642f41be74d351ddcab58
+timeCreated: 1516029254
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Materials/Floor.mat
+  uploadId: 416113

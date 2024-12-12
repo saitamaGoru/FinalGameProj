@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e6019d80f09150343b383464ea1d0be9
+timeCreated: 1515954762
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/PiratesChest_Lock_A1.prefab
+  uploadId: 416113

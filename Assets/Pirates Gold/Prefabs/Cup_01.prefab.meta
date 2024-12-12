@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3aa10c6fc2de2334f90909ade82c5e81
+timeCreated: 1515954510
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/Cup_01.prefab
+  uploadId: 416113

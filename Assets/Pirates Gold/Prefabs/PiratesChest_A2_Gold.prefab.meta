@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 564bf77a9f8d8564d8d55713deb27eae
+timeCreated: 1515954430
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/PiratesChest_A2_Gold.prefab
+  uploadId: 416113

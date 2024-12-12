@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cdac49690956b1944b34ff128d0659e4
+timeCreated: 1512984216
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Materials/Dish_01.mat
+  uploadId: 416113

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c435c5bc9cf5c7d40b53fad7aec42a1d
+timeCreated: 1516027482
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Maps/Demo/LightingData.asset
+  uploadId: 416113

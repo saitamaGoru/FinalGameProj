@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e5eabf4fb5916e34dbf777bbae427ab5
+timeCreated: 1516014794
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/Rock_01.prefab
+  uploadId: 416113

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4aa76134909f9614aa6dd0ccbbfbf562
+timeCreated: 1515954455
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Prefabs/PiratesChest_Cap.prefab
+  uploadId: 416113

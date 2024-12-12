@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 40d27d31e30ff4f4888ecf39ab962a06
+timeCreated: 1515796889
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188743
+  packageName: Pirates Gold
+  packageVersion: 1.0
+  assetPath: Assets/Pirates Gold/Materials/Coins_A1.mat
+  uploadId: 416113

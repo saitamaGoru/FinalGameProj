@@ -2268,10 +2268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b426b9c0c0f604fa00d1084a8318d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fencePrefab: {fileID: 0}
-  _itemPickup: {fileID: 0}
-  _coinPrefab: {fileID: 0}
-  _watchPrefab: {fileID: 0}
+  _fencePrefab: {fileID: 7592043855352683171, guid: 52c68921f84550149829c41c9f596422, type: 3}
+  _itemPickup: {fileID: 7401082528143658079, guid: 535ce84e763a68a4db9a5de267ff7c6f, type: 3}
+  _coinPrefab: {fileID: 949318022327801142, guid: f4347cf6c6a3f3a46820c42ea373530e, type: 3}
+  _watchPrefab: {fileID: 3721680985964969577, guid: 549255e793126a745bd50b952c0f7c93, type: 3}
   _itemSpawnChnce: 0.7
   _coinSpawnChnce: 0.5
   _watchSpawnChnce: 0.5
