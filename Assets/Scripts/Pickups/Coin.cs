@@ -14,6 +14,7 @@ public class Coin : PickupItem
         if(other.CompareTag(PlayerTag))
         {
             if(_gm.GameOver) return;
+           _scoreChannel.Invoke(true);
             ScoreManager.Instance.IncreaseScore(10);
             GameObject.FindGameObjectWithTag("HUD").GetComponent<CountCounter>().coinHUDCount--;
             Destroy(gameObject);

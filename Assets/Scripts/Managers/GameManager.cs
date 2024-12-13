@@ -1,15 +1,15 @@
 using TMPro;
 using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] PlayerController _playerCont;
     [SerializeField] TMP_Text _score;
     [SerializeField] GameObject _gameOver;
 
     [SerializeField] float _startTime = 6f;
+    [SerializeField] AudioManager _audioManager;
      public float _runTime {get; set;}
      
     bool _gameIsOver = false;
@@ -37,17 +37,11 @@ public class GameManager : MonoBehaviour
 
     void GameOverScreen()
     {
+        _audioManager.StopInGameMusic();
         _gameIsOver = true;
+        _audioManager.PlayGameOverMusic();
         _playerCont.enabled = false;
         _gameOver.SetActive(true);
         Time.timeScale = 0.5f;
-        StartCoroutine(LoadEndSceneWithDelay(5f));
-    }
-
-    private IEnumerator LoadEndSceneWithDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-
-        SceneManager.LoadScene("End Scene");
     }
 }

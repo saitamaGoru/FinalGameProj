@@ -5,16 +5,23 @@ using UnityEngine;
 
 public class BlockSpawner : MonoBehaviour
 {
-    [SerializeField] GameObject[] obstaclePrefabs;
+   [SerializeField] GameObject[] obstaclePrefabs;
     [SerializeField] int blockNumbers = 5;
     [SerializeField] Transform obstacleParent;
     [SerializeField] float timer = 2f;
+    [SerializeField]float minBlockSpawnTime = 0.2f;
     [SerializeField] float spawnArea = 4f;
      int i=0;
     void Start()
     {
       
        StartCoroutine(SpawnBlockRoutine());
+    }
+
+    public void DecreaseObstacleSpawnTime(float amnt)
+    {
+        timer -= amnt;
+        if(timer <= minBlockSpawnTime) timer = minBlockSpawnTime;
     }
 
     IEnumerator SpawnBlockRoutine()
@@ -29,7 +36,5 @@ public class BlockSpawner : MonoBehaviour
            // i++;
         }
     }
-
-   
 
 }

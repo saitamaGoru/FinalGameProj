@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ScoreListener : MonoBehaviour
+public class ScoreListener : EventListener<bool>
 {
     public ScoreEventChannel scoreEventChannel;
 

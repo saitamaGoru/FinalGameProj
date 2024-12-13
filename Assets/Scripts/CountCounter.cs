@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 public class CountCounter : MonoBehaviour
 {
     public TMP_Text textCointCounter;
-
+     AudioSource _adSOurce;
     public int coinHUDCount = 50;
+
+    public int indexNumber {get; private set;}
 
     void Start()
     {
+        indexNumber = SceneManager.GetActiveScene().buildIndex;
     }
 
 
@@ -33,6 +36,7 @@ public class CountCounter : MonoBehaviour
     private void LoadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        indexNumber = currentSceneIndex;
         int nextSceneIndex = currentSceneIndex + 1;
 
             Debug.Log("Score Before Scene Change: " + ScoreManager.Instance.Score);

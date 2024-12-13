@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3b161690a0ffa4896f5764ed1b83f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  _aClip: {fileID: 0}
+  _speedBoostSound: {fileID: 11400000, guid: fcba4a2e6dc622543907d31adcf9d74f, type: 2}
 --- !u!1001 &7518415431627094069
 PrefabInstance:
   m_ObjectHideFlags: 0

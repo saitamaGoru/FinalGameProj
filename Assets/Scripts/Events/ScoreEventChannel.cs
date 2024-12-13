@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu(menuName = "Events/ScoreEventChannel")]
-public class ScoreEventChannel : ScriptableObject
+public class ScoreEventChannel : EventChannel<bool>
 {
     public UnityAction<int> OnScoreAdded;
 
