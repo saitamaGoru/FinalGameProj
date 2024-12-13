@@ -6,22 +6,33 @@ public class ScoreUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _scoreText;
 
-    private void Start()
+private void OnEnable()
     {
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.OnScoreChanged += UpdateScore;
+        }
+
         UpdateScore();
+    }
+
+    private void OnDisable()
+    {
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.OnScoreChanged -= UpdateScore;
+        }
     }
 
     public void UpdateScore()
     {
-       
-       
-        StartCoroutine(UpdateScoreNextFrame());
+        if (_scoreText != null)
+        {
+            _scoreText.text = "Score: " + ScoreManager.Instance.Score.ToString();
+        }
+        else
+        {
+            Debug.LogWarning("Score Text UI element is not assigned.");
+        }
     }
-
-    private IEnumerator UpdateScoreNextFrame()
-    {
-        yield return null;
-         _scoreText.text = "Score: " + ScoreManager.Instance.Score.ToString();
-    }
-
 }

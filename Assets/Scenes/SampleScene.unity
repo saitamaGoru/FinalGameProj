@@ -6014,7 +6014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f1c4ebc353be94fb40674f8df2058d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoUnparentOnAwake: 1
 --- !u!4 &555302399
 Transform:
   m_ObjectHideFlags: 0
@@ -7102,34 +7101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74fba53c81f3c714ba8b88f753772eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _channel: {fileID: 11400000, guid: 38bed8e7c0cadde47ad029b0e565ed47, type: 2}
-  _unityEvents:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 555302398}
-        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-        m_MethodName: IncreaseScore
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1771154434}
-        m_TargetAssemblyTypeName: ScoreUI, Assembly-CSharp
-        m_MethodName: UpdateScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  scoreEventChannel: {fileID: 0}
 --- !u!114 &1771154434
 MonoBehaviour:
   m_ObjectHideFlags: 0

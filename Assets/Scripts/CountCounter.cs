@@ -35,7 +35,7 @@ public class CountCounter : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
 
-            Debug.Log("All coins collected! Loading next scene...");
+            Debug.Log("Score Before Scene Change: " + ScoreManager.Instance.Score);
             SceneManager.LoadScene(nextSceneIndex);
     }
 }
