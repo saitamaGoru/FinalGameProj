@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,5 +41,13 @@ public class GameManager : MonoBehaviour
         _playerCont.enabled = false;
         _gameOver.SetActive(true);
         Time.timeScale = 0.5f;
+        StartCoroutine(LoadEndSceneWithDelay(5f));
+    }
+
+    private IEnumerator LoadEndSceneWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        SceneManager.LoadScene("End Scene");
     }
 }
