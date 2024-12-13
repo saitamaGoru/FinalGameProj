@@ -10,6 +10,6 @@ public class Coin : PickupItem
     {
         if(_gm.GameOver) return;
         _scoreChannel.Invoke(_score);
-        GameObject.FindGameObjectWithTag("HUD").GetComponent<CountCounter>().coinHUDCount--; 
+        GameObject.FindGameObjectWithTag("HUD").GetComponent<CountCounter>().coinHUDCount--;
     }
 }
