@@ -16,10 +16,22 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4301565453705833590, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
+      propertyPath: _particleSystem
+      value: 
+      objectReference: {fileID: 1427184117912923351, guid: f6a0ec63474878647a87e5bc237054b7, type: 3}
     - target: {fileID: 5539600626051192236, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 6927516708735581948, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 42375ff90a816f74d8cf648cf0d937b0, type: 3}
+    - target: {fileID: 6927516708735581948, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42375ff90a816f74d8cf648cf0d937b0, type: 3}
     - target: {fileID: 8525716661417528805, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.27
@@ -64,6 +76,7 @@ PrefabInstance:
     - {fileID: 3145798591856808586, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8509564659420184680, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
+    - {fileID: 7112054564780105513, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8525716661417528805, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
       insertIndex: -1
@@ -160,9 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed95180209d6dad4bacca3dfbfb429df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleSystem: {fileID: 0}
+  _particleSystem: {fileID: 1427184117912923351, guid: f6a0ec63474878647a87e5bc237054b7, type: 3}
   _shakeMod: 1
-  _fxAudio: {fileID: 0}
+  _fxAudio: {fileID: 2392868255227949662}
 --- !u!136 &972482779584339492
 CapsuleCollider:
   m_ObjectHideFlags: 0

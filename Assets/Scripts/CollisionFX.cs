@@ -1,8 +1,8 @@
 using UnityEngine;
 using Unity.Cinemachine;
-public class Rock : MonoBehaviour
+public  class CollisionFX : MonoBehaviour
 {
-     [SerializeField] ParticleSystem _particleSystem;
+    [SerializeField] ParticleSystem _particleSystem;
     [SerializeField] float _shakeMod = 10f;
     float _maxTimerLimit = 1f;
     float timer = 1f;
@@ -12,12 +12,11 @@ public class Rock : MonoBehaviour
    void Awake()
    {
     _cineMchImplseSrce = GetComponent<CinemachineImpulseSource>();
-     _fxAudio = GetComponent<AudioSource>();
-    _particleSystem = GetComponentInChildren<ParticleSystem>();
-  
+    
    }
 
-   void Update()
+    
+    void Update()
    {
         timer += Time.deltaTime;
    }
@@ -45,7 +44,4 @@ public class Rock : MonoBehaviour
         _particleSystem.Play();
         _fxAudio.Play();
     }
-
-
-
 }

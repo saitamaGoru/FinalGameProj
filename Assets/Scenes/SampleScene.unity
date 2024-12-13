@@ -5203,7 +5203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCointCounter: {fileID: 157672210}
-  coinHUDCount: 20
+  coinHUDCount: 10
 --- !u!114 &157672210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6717,7 +6717,35 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 637439190}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: MusicForLevel2
+        m_MethodName: MusicForLevel1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1301195759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301195751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7118af1186c867f48bd3dccd2fc76fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _channel: {fileID: 11400000, guid: cd8a92418e81e0646950ed0ddeaf92c0, type: 2}
+  _unityEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 637439190}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayWatchPickup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6971,7 +6999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 5432153408430485984, guid: 25351b6a09cfc0745ac66cd5e35bbfa7, type: 3}
-  blockNumbers: 5
+  blockNumbers: 3
   obstacleParent: {fileID: 1482181053}
   timer: 2
   minBlockSpawnTime: 0.2
@@ -7458,6 +7486,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: c63b8d0e404f3d14396906f05ecea33a, type: 3}
     - target: {fileID: 7160382722821633210, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
+      propertyPath: hourGlass
+      value: 
+      objectReference: {fileID: 8300000, guid: aa9f4bdc225801d47a36aa6266017554, type: 3}
+    - target: {fileID: 7160382722821633210, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
       propertyPath: _cntCounter
       value: 
       objectReference: {fileID: 157672209}
@@ -7472,6 +7504,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6341839721807040049, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1301195755}
+    - targetCorrespondingSourceObject: {fileID: 6341839721807040049, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301195759}
   m_SourcePrefab: {fileID: 100100000, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
 --- !u!1001 &8675492705349417341
 PrefabInstance:

@@ -195,7 +195,7 @@ MonoBehaviour:
   _watchPrefab: {fileID: 3721680985964969577, guid: 549255e793126a745bd50b952c0f7c93, type: 3}
   _itemSpawnChnce: 0.3
   _coinSpawnChnce: 0.5
-  _watchSpawnChnce: 0.05
+  _watchSpawnChnce: 0.5
   offSet: 1
   coindDistanceOffset: 2
   lanes:

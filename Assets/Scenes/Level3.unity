@@ -757,6 +757,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 2120647723362001256, guid: 80d6b17d7dd4b6a43a311a4f2aa2fea3, type: 3}
+  - {fileID: 5432153408430485984, guid: 25351b6a09cfc0745ac66cd5e35bbfa7, type: 3}
+  - {fileID: 2120647723362001256, guid: 80d6b17d7dd4b6a43a311a4f2aa2fea3, type: 3}
+  - {fileID: 2120647723362001256, guid: 80d6b17d7dd4b6a43a311a4f2aa2fea3, type: 3}
+  - {fileID: 5432153408430485984, guid: 25351b6a09cfc0745ac66cd5e35bbfa7, type: 3}
+  - {fileID: 5363736234937732719, guid: 4c7ed9f6bde95ef439b1becddee020f3, type: 3}
   blockNumbers: 5
   obstacleParent: {fileID: 609852298}
   timer: 2
@@ -6057,7 +6062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCointCounter: {fileID: 1406193776}
-  coinHUDCount: 100
+  coinHUDCount: 3
 --- !u!114 &1406193776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12043,6 +12048,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 36ec5f505a1374f4abde6372f3a780a6, type: 3}
     - target: {fileID: 7160382722821633210, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
+      propertyPath: hourGlass
+      value: 
+      objectReference: {fileID: 8300000, guid: aa9f4bdc225801d47a36aa6266017554, type: 3}
+    - target: {fileID: 7160382722821633210, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
       propertyPath: _cntCounter
       value: 
       objectReference: {fileID: 1406193775}
@@ -12057,6 +12066,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6341839721807040049, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1866003374}
+    - targetCorrespondingSourceObject: {fileID: 6341839721807040049, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1866003375}
   m_SourcePrefab: {fileID: 100100000, guid: 8a859b5a0e3defc47ba339cc7d53c8aa, type: 3}
 --- !u!1 &1866003372 stripped
 GameObject:
@@ -12093,6 +12105,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1866003373}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: MusicForLevel3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1866003375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866003372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7118af1186c867f48bd3dccd2fc76fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _channel: {fileID: 11400000, guid: cd8a92418e81e0646950ed0ddeaf92c0, type: 2}
+  _unityEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1866003373}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayWatchPickup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12290,7 +12330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animatorStumble: {fileID: 1856379854}
-  _adClip: {fileID: 0}
+  _adClip: {fileID: 8300000, guid: c97519035d22d7e48a892d5ae87eb5b1, type: 3}
   _collCoolDown: 1
   _changePlatformSpeed: -2
 --- !u!114 &2007950138

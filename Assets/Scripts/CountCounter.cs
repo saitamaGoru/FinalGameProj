@@ -25,6 +25,10 @@ public class CountCounter : MonoBehaviour
             Debug.Log("Load Scene!!");
             LoadNextScene();
         }
+        if(coinHUDCount == 0 && SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            SceneManager.LoadScene(0);
+        }
         
     }
 

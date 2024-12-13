@@ -125,3 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 100
+  TimeIncrease: 1
+  _watchSound: {fileID: 11400000, guid: cd8a92418e81e0646950ed0ddeaf92c0, type: 2}
