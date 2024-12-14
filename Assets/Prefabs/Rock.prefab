@@ -25,6 +25,10 @@ PrefabInstance:
       value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6927516708735581948, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
+      propertyPath: m_Volume
+      value: 0.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927516708735581948, guid: e40f7c36b6b11704f8e59f0451a31e14, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 42375ff90a816f74d8cf648cf0d937b0, type: 3}

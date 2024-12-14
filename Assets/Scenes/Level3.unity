@@ -6062,7 +6062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCointCounter: {fileID: 1406193776}
-  coinHUDCount: 3
+  coinHUDCount: 100
 --- !u!114 &1406193776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12126,7 +12126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7118af1186c867f48bd3dccd2fc76fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _channel: {fileID: 11400000, guid: cd8a92418e81e0646950ed0ddeaf92c0, type: 2}
+  _channel: {fileID: 11400000, guid: d3bbdacf04d105141b8805529bbf459c, type: 2}
   _unityEvents:
     m_PersistentCalls:
       m_Calls:

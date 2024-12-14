@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("References")]
@@ -11,12 +12,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] float _startTime = 6f;
     [SerializeField] AudioManager _audioManager;
      public float _runTime {get; set;}
-     
+
     bool _gameIsOver = false;
 
     public bool GameOver => _gameIsOver;
     void Start()
-    {   
+    {
         _runTime = _startTime;
     }
 
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         DecreaseTime();
+        if (Input.GetKeyDown(KeyCode.Escape) && !_gameIsOver)
+        {
+            OpenPauseMenu();
+        }
     }
 
     private void DecreaseTime()
@@ -43,5 +48,23 @@ public class GameManager : MonoBehaviour
         _playerCont.enabled = false;
         _gameOver.SetActive(true);
         Time.timeScale = 0.5f;
+        StartCoroutine(LoadEndSceneWithDelay(5f));
+    }
+
+    private IEnumerator LoadEndSceneWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("End Scene");
+    }
+
+     void OpenPauseMenu()
+    {
+        // Pause the game
+        Time.timeScale = 0f;
+        _playerCont.enabled = false;
+
+        // Load the PauseScene
+        SceneManager.LoadScene("PauseScene", LoadSceneMode.Additive);
     }
 }

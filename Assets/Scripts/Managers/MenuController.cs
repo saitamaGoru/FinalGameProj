@@ -42,12 +42,6 @@ public class MenuController : MonoBehaviour
     public void PlayAgain()
     {
         Debug.Log("Play Again clicked");
-<<<<<<< Updated upstream
-        SceneManager.LoadScene("MainMenu"); // Load the Main Menu again
-=======
-        SceneManager.LoadScene("MainMenu"); 
->>>>>>> Stashed changes
+        SceneManager.LoadScene("SampleScene"); // Load the Main Menu again
     }
-
-   
 }
